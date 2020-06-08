@@ -1,0 +1,18 @@
+<resources>
+    <!-- Margins and padding -->
+    <dimen name="gap_1">2dp</dimen>
+    <dimen name="gap_2">4dp</dimen>
+    <dimen name="gap_3">6dp</dimen>
+    <dimen name="gap_4">8dp</dimen>
+    <dimen name="gap_5">12dp</dimen>
+    <dimen name="gap_6">16dp</dimen>
+    <dimen name="gap_7">20dp</dimen>
+    <dimen name="gap_8">24dp</dimen>
+    <dimen name="gap_9">28dp</dimen>
+    <dimen name="gap_10">32dp</dimen>
+    <dimen name="gap_11">36dp</dimen>
+    <dimen name="gap_12">40dp</dimen>
+
+    <!--  Others  -->
+    <dimen name="item_decoration_height">1dp</dimen>
+</resources>

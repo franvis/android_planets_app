@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/blueMedium</color>
+    <color name="colorPrimaryDark">@color/blueStrong</color>
+    <color name="colorAccent">@color/tealMedium</color>
+
+    <!-- White to black -->
+    <color name="white">#FFFFFF</color>
+    <color name="greyExtraSoft">#E0E0E0</color>
+    <color name="greySoft">#9E9E9E</color>
+    <color name="greyMedium">#757575</color>
+    <color name="greyStrong">#212121</color>
+    <color name="black">#000000</color>
+
+    <!--  Orange  -->
+    <color name="orangeMedium">#FF5722</color>
+    <color name="orangeAccent">#FF3D00</color>
+    <color name="orangeStrong">#D84315</color>
+
+    <!-- Blue -->
+    <color name="lightBlueSoft">#0277bd</color>
+    <color name="lightBlue">#1976D2</color>
+    <color name="blueMedium">#3F51B5</color>
+    <color name="blueStrong">#1A237E</color>
+
+    <!-- Teal -->
+    <color name="tealExtraSoft">#B5E7E3</color>
+    <color name="tealSoft">#80CBC4</color>
+    <color name="tealMedium">#00BFA5</color>
+    <color name="tealMediumStrong">#009688</color>
+    <color name="tealStrong">#00877B</color>
+
+    <!--  Blue grey  -->
+    <color name="blueGreySoft">#CFD8DC</color>
+
+    <!--  Green  -->
+    <color name="lightGreen">#66BB6A</color>
+
+    <!--  Red  -->
+    <color name="redSoft">#FF8A99</color>
+    <color name="redMedium">#EF5350</color>
+    <color name="redMediumStrong">#D50000</color>
+    <color name="darkRedStrong">#6B000E</color>
+</resources>
