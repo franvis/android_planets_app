@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import ar.francisco.visintini.planets.item.PlanetItem
+import domain.interactor.GetPlanets
 
 class PlanetsViewModel : ViewModel() {
 
@@ -13,6 +14,14 @@ class PlanetsViewModel : ViewModel() {
         get() = _planets
 
     fun start() {
-        _planets.value = getPlanets().map { PlanetItem.ViewState(it.name, it.description, it.imageUrl) }
+        getPlanets.invoke { planets ->
+            _planets.value = planets.map {
+                PlanetItem.ViewState(
+                    it.name,
+                    it.shortDescription,
+                    it.imageUrl
+                )
+            }
+        }
     }
 }
