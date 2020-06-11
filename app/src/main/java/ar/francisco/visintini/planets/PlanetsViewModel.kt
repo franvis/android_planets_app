@@ -15,13 +15,13 @@ class PlanetsViewModel : ViewModel() {
 
     fun start() {
         getPlanets.invoke { planets ->
-            _planets.value = planets.map {
+            _planets.postValue(planets.map {
                 PlanetItem.ViewState(
                     it.name,
                     it.shortDescription,
                     it.imageUrl
                 )
-            }
+            })
         }
     }
 }
