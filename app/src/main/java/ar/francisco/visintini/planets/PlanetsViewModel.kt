@@ -9,19 +9,20 @@ import domain.interactor.GetPlanets
 class PlanetsViewModel : ViewModel() {
 
     private val getPlanets = GetPlanets()
-    private val _planets = MutableLiveData<List<PlanetItem.ViewState>>()
-    val planets: LiveData<List<PlanetItem.ViewState>>
+    private val _planets = MutableLiveData<PlanetsViewState>()
+    val planets: LiveData<PlanetsViewState>
         get() = _planets
 
     fun start() {
+        _planets.postValue(PlanetsViewState(true, emptyList()))
         getPlanets.invoke { planets ->
-            _planets.postValue(planets.map {
+            _planets.postValue(PlanetsViewState(false, planets.map {
                 PlanetItem.ViewState(
                     it.name,
                     it.shortDescription,
                     it.imageUrl
                 )
-            })
+            }))
         }
     }
 }
